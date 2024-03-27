@@ -1,0 +1,50 @@
+.body {
+    margin: 0;
+}
+.Poster-header {
+    background-color: black;
+    width:1920px;
+    padding-top:32px ;
+    padding-bottom: 32px;
+}
+.Poster-header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:208px;
+
+}
+.logo {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 325px;
+    height: 12px;
+}
+nav {
+    font-family: Fira Sans,Arial, sans-serif;
+}
+.nav-list {
+    display: flex;
+    width: 759px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list-item a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+.nav-list-item div {
+    width: 6px;
+    height: 6px;
+    border-radius: 1px;
+    /* white */
+    background-color: rgb(255, 255, 255);
+    transform: rotate(-45.00deg);
+}
