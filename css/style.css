@@ -54,9 +54,11 @@ nav {
     transform: rotate(-45.00deg);
 }
 .poster-main {
-    width: 1920px;
+    margin-left: 312px;
+    width: 1296px;
 }
 .previews {
+
     margin-bottom: 184px;
 }
 .previews-div {
@@ -98,4 +100,41 @@ nav {
     line-height: 140%;
     text-align: left;
     color:black;
+}
+/*стили для скции афиша*/
+.head-poster-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+    color: rgb(25, 25, 25);
+    font-family: EB Garamond, Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+.head-poster-section  a{
+    text-decoration: none;
+    color: rgb(25, 25, 25);
+    font-family: 'EB Garamond', 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.all-events::before {
+    content: "";
+    position: absolute;
+    background-image: url('../img/icon-calendar.png');
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    right: 190px;
+
 }
