@@ -102,10 +102,14 @@ nav {
     color:black;
 }
 /*стили для скции афиша*/
+.poster {
+    margin-left: 12px;
+}
 .head-poster-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 100px;
 }
 h1 {
     color: rgb(25, 25, 25);
@@ -118,9 +122,10 @@ h1 {
 
 }
 .head-poster-section  a{
+    position: relative;
     text-decoration: none;
     color: rgb(25, 25, 25);
-    font-family: 'EB Garamond', 'Arial', sans-serif;
+    font-family: EB Garamond, Arial, sans-serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 140%;
@@ -129,12 +134,153 @@ h1 {
 }
 .all-events::before {
     content: "";
+    display: block;
     position: absolute;
     background-image: url('../img/icon-calendar.png');
     width: 35px;
     height: 35px;
     background-size: cover;
     background-repeat: no-repeat;
-    right: 190px;
+   right: 221px;
+}
+.poster-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.poster-list-items {
+    display:flex;
+background-color: rgba(25, 25, 25, 0.05);
+    border-radius: 16px;
+    padding: 32px 60px 32px 60px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.poster-list-items :last-child{
+    margin-bottom: 0;
 
+}
+.data-event {
+    display: flex;
+    flex-direction: column;
+    color: rgb(25, 25, 25, 0.75);
+    font-family: EB Garamond, Arial, sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0%;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.data-event p {
+    margin: 0;
+}
+.data-event span {
+    font-size: 32px;
+    vertical-align: text-top;
+    line-height: 140%;
+
+}
+.poster-list-items img {
+    display: block;
+    border-radius: 12px;
+}
+.poster-item-title {
+    width: 415px;
+}
+.poster-item-title h2 {
+    color: rgb(25, 25, 25);
+    font-family: EB Garamond, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 16px;
+}
+.item-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: left;
+    color: rgb(25, 25, 25, 0.75);
+    margin: 0;
+    margin-bottom: 40;
+}
+.item-details{
+    color: rgb(25, 25, 25, 0.75);
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: left;
+    justify-content: flex-start;
+    gap:32px;
+    align-items: center;
+}
+.details {
+    position: relative;
+    margin: 0;
+    padding-left: 50px;
+    padding-top:5px ;
+}
+.details::before{
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url('../img/notes.png');
+    width: 25px;
+    height: 27px;
+    left:0;
+    top:0;
+}
+.time-event {
+    position: relative;
+    padding-left: 50px;
+    padding-top: 5px;
+    margin: 0;
+}
+.time-event::before{
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url('../img/clock.png');
+    width: 27px;
+    height: 27px;
+    left:0;
+    top:0;
+
+}
+.details-old {
+    position: relative;
+    padding-left: 50px;
+    padding-top: 5px;
+    margin: 0;
+}
+.details-old::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url('../img/man.png');
+    width: 26px;
+    height: 28px;
+    left:0;
+    top:0;
+
+}
+.poster-list-items button {
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    text-align: center;
+    border-radius: 50px;
+    background-color: rgb(5, 176, 147);
+    padding: 15px 30px 14px 30px;
 }
