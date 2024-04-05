@@ -5,12 +5,14 @@ body {
     font-family: Fira Sans;
     font-size: 16px;
     font-weight: 600;
+    overflow: auto;
 }
 .Poster-header {
     background-color: black;
-    width:1920px;
+    width:1296px;
     padding-top:32px ;
     padding-bottom: 32px;
+    margin: 0 auto;
 }
 .Poster-header div {
     display: flex;
@@ -54,7 +56,7 @@ nav {
     transform: rotate(-45.00deg);
 }
 .poster-main {
-    margin-left: 312px;
+    margin:0 auto;
     width: 1296px;
 }
 .previews {
@@ -109,15 +111,15 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
 }
 h1 {
+    margin: 0;
     color: rgb(25, 25, 25);
     font-family: EB Garamond, Arial, sans-serif;
     font-size: 48px;
     font-weight: 700;
     line-height: 140%;
-    letter-spacing: 0%;
     text-align: center;
 
 }
@@ -129,7 +131,6 @@ h1 {
     font-size: 24px;
     font-weight: 700;
     line-height: 140%;
-    letter-spacing: 0%;
     text-align: left;
 }
 .all-events::before {
@@ -169,7 +170,6 @@ background-color: rgba(25, 25, 25, 0.05);
     font-size: 64px;
     font-weight: 700;
     line-height: 140%;
-    letter-spacing: 0%;
     align-items: center;
     justify-content: flex-start;
 
@@ -196,7 +196,7 @@ background-color: rgba(25, 25, 25, 0.05);
     font-size: 32px;
     font-weight: 700;
     line-height: 140%;
-    letter-spacing: 0%;
+
     text-align: left;
     margin: 0;
     margin-bottom: 16px;
@@ -205,11 +205,10 @@ background-color: rgba(25, 25, 25, 0.05);
     font-size: 16px;
     font-weight: 400;
     line-height: 140%;
-    letter-spacing: 0%;
     text-align: left;
     color: rgb(25, 25, 25, 0.75);
     margin: 0;
-    margin-bottom: 40;
+    margin-bottom: 40px;
 }
 .item-details{
     color: rgb(25, 25, 25, 0.75);
@@ -217,7 +216,6 @@ background-color: rgba(25, 25, 25, 0.05);
     font-size: 16px;
     font-weight: 400;
     line-height: 140%;
-    letter-spacing: 0%;
     text-align: left;
     justify-content: flex-start;
     gap:32px;
@@ -283,4 +281,156 @@ background-color: rgba(25, 25, 25, 0.05);
     border-radius: 50px;
     background-color: rgb(5, 176, 147);
     padding: 15px 30px 14px 30px;
+}
+/*секция новости плюс календарь
+ */
+.news-calendar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 160px;
+}
+.news {
+    max-width: 636px;
+}
+.news h2 {
+    color: rgb(25, 25, 25);
+    font-family: EB Garamond, Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 60px;
+}
+.news-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: space-between;
+    column-gap: 24px;
+}
+.news-list-items div {
+    background-image: url("../img/news__image1.jpeg");
+    width: 306px;
+    height: 204px;
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    margin-bottom: 32px;
+}
+.news-list-items .news-image2 {
+    background-image: url("../img/news__image2.jpeg");
+    background-size: contain;
+}
+.news-list-items h3 {
+    color: rgb(25, 25, 25);
+    font-family: EB Garamond;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 24px;
+}
+.news-list-items p {
+    margin: 0;
+    color: rgb(25, 25, 25, 0.75);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+}
+.calendar-title {
+    background: rgba(25, 25, 25, 0.5);
+    background-image: url("../img/calendar__image.jpeg");
+    width: 526px;
+    height: 300px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.calendar-title h3 {
+    color: white;
+    font-family: EB Garamond, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: left;
+    margin: 0;
+    margin-left: 24px;
+    padding-top: 220px;
+
+}
+.calendar {
+    display: flex;
+    padding: 24px;
+    column-gap: 20px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: rgba(25, 25, 25, 0.05);
+}
+.month-number {
+    min-width: 154px;
+}
+.month {
+    margin: 0;
+    color: rgb(25, 25, 25);
+    font-family: EB Garamond;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: left;
+    margin-bottom: 123px;
+}
+.button-calendar {
+    display: flex;
+    gap: 8px;
+}
+.button-calendar button{
+    border:none;
+    background-color:rgb(5, 176, 147);
+    border-radius: 8px;
+    width: 48px;
+    height: 48px;
+}
+.calendar-day {
+    display: grid;
+    grid-template-columns: repeat(7,40px);
+    grid-template-rows: auto;
+    gap:4px;
+
+}
+.calendar-day div {
+    display: flex;
+    background-color:rgba(25, 25, 25, 0.3);
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+}
+.calendar-day div:nth-child(2n+7) {
+    background-color: rgb(5, 176, 147);
+}
+/* краткие анонсы */
+.head-poster-section h2 {
+    color: rgb(25, 25, 25);
+    font-family: EB Garamond, Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 140%;
+    text-align: center;
+}
+.announcement-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.announcement-list-items {
+    display: flex;
+}
+.announcement-data {
+    background-color: rgb(5, 176, 147);
+    border-radius: 12px;
 }
